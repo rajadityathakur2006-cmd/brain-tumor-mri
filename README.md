@@ -3,7 +3,7 @@
 Deep learning classifier that labels a brain MRI as Glioma, Meningioma, Pituitary tumor or No Tumor.
 A custom CNN is compared with three pretrained models (MobileNetV2, ResNet50, EfficientNetB0), and the best one is served in a Streamlit app.
 
-> Educational project. Not a medical device. Do not use for real diagnosis.
+NOTE: Educational project. Not a medical device. Do not use for real diagnosis.
 
 ## Dataset
 Labeled MRI Brain Tumor Dataset (Roboflow, CC BY 4.0): 2,443 images (1,695 train / 502 validation / 246 test), four classes.
@@ -26,7 +26,10 @@ Labeled MRI Brain Tumor Dataset (Roboflow, CC BY 4.0): 2,443 images (1,695 train
 | EfficientNetB0 | | | | |
 
 ## Run the app
-Needs the `models/` folder created by the training notebook.
+    pip install -r requirements.txt
+    streamlit run app.py
+
+Needs the models folder created by the training notebook.
 
 ## Limitations
 Small test set (246 images); one public dataset; not validated for clinical use.
