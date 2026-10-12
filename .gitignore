@@ -1,0 +1,4 @@
+models/*_best.keras
+models/resnet50.h5
+__pycache__/
+.ipynb_checkpoints/
